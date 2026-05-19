@@ -15,11 +15,20 @@ If something is unclear, the learner will **append additional questions** to tha
 3. Keep answers tight, idiomatic, and matching the tone of the existing README. No fluff, no restating the question.
 4. Never modify or answer the base self-check questions.
 
+## Reference books
+
+The `references/` directory contains two authoritative Go books:
+- **Donovan & Kernighan — *The Go Programming Language* (2015)** — the canonical reference; precise on language semantics, memory model, concurrency primitives.
+- **Jon Bodner — *Learning Go: An Idiomatic Approach* (2nd ed., 2024)** — modern idioms, generics, modules, current tooling.
+
+When scaffolding a lesson, read the relevant chapter(s) from one or both books (use the `Read` tool with `pages:` for targeted ranges) to ground the objective, key idioms, gotchas, and exercise in what these books actually teach. Prefer Bodner for idiom/style framing and Donovan for spec-level precision. Do not copy prose verbatim — distill into the README's voice. Cite a book + chapter in the lesson README only if a specific gotcha or idiom is worth the learner looking up directly.
+
 ## Scaffolding new lessons
 
 When asked to scaffold the next lesson (e.g. "scaffold L02"), create `chNN/` with:
 - `README.md` following the L01 structure: Objective → "You should finish this lesson able to answer..." list → Key idioms / mental model → What's in this directory → Exercise → Gotchas → Checkpoint.
 - Starter `.go` file(s) with `// TODO` markers where the learner fills in code.
+- Content enriched by the relevant chapters from `references/` (see above).
 
 ## Commit cadence
 
